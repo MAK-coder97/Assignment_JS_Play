@@ -1,0 +1,24 @@
+const testResults = [
+  "pass",
+  "fail",
+  "pass",
+  "skip",
+  "pass",
+  "fail",
+  "pass"
+];
+
+let passed = 0;
+let failed = 0;
+let skipped = 0;
+
+// Count test results
+for (let i = 0; i < testResults.length; i++) {
+  if (testResults[i] === "pass") {
+    passed++;
+  } else if (testResults[i] === "fail") {
+    failed++;
+  } else if (testResults[i] === "skip") {
+    skipped++;
+  }
+}
